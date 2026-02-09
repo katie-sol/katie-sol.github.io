@@ -2,7 +2,29 @@
 const pageTitle = "Home";
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout pageTitle = {pageTitle}>
+<BaseLayout>
 	<!-- astro <slot /> -->
-	Home page!
+	<h2>Introduction</h2>
+	<section>
+		<img src ="/img/Bimmer.png" alt = "Image placeholder" />
+	</section>
+	<h2>Education</h2>
+	<img src="/img/Allegheny.png" alt ="Allegheny College" />
+	<p>
+		Allegheny 2024-Current
+	</p>
+	<h2>Skills</h2>
+	<h3>Skill set 1</h3>
+	<p>
+		Relevant skills
+	</p>
+	<h3>Skill set 2</h3>
+	<p>
+		Relevant skills
+	</p>
+	<h3>Skill set 3</h3>
+	<p>
+		Relevant skills
+	</p>
+
 </BaseLayout>
