@@ -13,7 +13,7 @@ test('has title', async ({ page }) => {
 test('has h1', async ({page}) => {
   await page.goto(process.env.BASE_URL);
   await expect(page.getByRole('heading', { name: 'Astro', level: 1 })).not.toBeVisible();
-  const h1 = page.locator('h1');
+  const h1 = page.getByRole('heading', { name: 'Introduction', level: 1});
   await expect(h1).not.toBeEmpty();
 });
 
@@ -43,7 +43,7 @@ test('has at least one section', async ({page}) => {
 
 test('has at least one paragraph', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const para = page.locator('p');
+  const para = page.getByText('this is my car')
   await expect(para).not.toBeEmpty();
 });
 
@@ -55,18 +55,18 @@ test('has a main element', async ({page}) => {
 
 test('has an img element', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const img = page.getByRole('img');
+  const img = page.getByRole('img', { name: 'Image placeholder'});
   await expect(img).not.toBeNull();
 });
 
 test('img element has src attribute', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const img = page.locator('img');
+  const img = page.getByRole('img', { name: 'Image placeholder'});
   await expect(img).toHaveAttribute('src');
 });
 
 test('img element has alt attribute', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const img = page.locator('img');
+  const img = page.getByRole('img', { name: 'Image placeholder'});
   await expect(img).toHaveAttribute('alt');
 });
