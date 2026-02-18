@@ -4,15 +4,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout>
 	<!-- astro <slot /> -->
-	<h1 class = "left">Introduction</h1>
-	<section>
-		<p class = "left">Welcome to my Portfolio! You'll find important information such as my education, skills, and career profile on this page.</p>
-		<section class = >
+	<h1 class = "centered">Introduction</h1>
+	<section class = "container full__three_column gap__3_rem span__2_col">
+		<p>Welcome to my Portfolio! You'll find important information such as my education, skills, and career profile on this page.</p>
 		<img src ="/img/Bimmer.png" alt = "Image placeholder" />
-		</section>
 	</section>
 	<h2>Education</h2>
-	<img src="/img/Allegheny.png" alt ="Allegheny College" />
+	<section class = span__3>
+		<img src="/img/Allegheny.png" alt ="Allegheny College" />
+	</section>
 	<p>
 		Allegheny 2024-Current
 	</p>
