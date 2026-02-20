@@ -50,6 +50,7 @@ header strong {
 
 nav {
     text-align: right;
+    position: sticky;
 }
 
 nav a {
@@ -146,6 +147,16 @@ th, td {
 
 .text__column {
     grid-gap: 2rem;
+}
+
+.third-centered {
+    width: 33vw;
+    margin: 0 auto;
+}
+
+.third-centered img {
+    position: relative;
+    width: 100%
 }
 .skill-card {
     background: #003333;
