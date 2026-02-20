@@ -4,29 +4,66 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout>
 	<!-- astro <slot /> -->
+	<section class = "full__teal_band">
 	<h1 class = "centered">Introduction</h1>
-	<section class = "container full__three_column gap__3_rem span__2_col">
-		<p>Welcome to my Portfolio! You'll find important information such as my education, skills, and career profile on this page.</p>
+	<section class = "container full__three_column gap__3_rem">
 		<img src ="/img/Bimmer.png" alt = "Image placeholder" />
+		<div class = "centered span__2_col">
+			<p>Welcome to my Portfolio! You'll find important information such as my education, skills, and career profile on this page.</p>
+		</div>
 	</section>
-	<h2>Education</h2>
-	<section class = span__3>
+	<h2 class = "centered">Education</h2>
+	<section class = "container full__three_column gap__3_rem">
 		<img src="/img/Allegheny.png" alt ="Allegheny College" />
+		<div>
+			<p>Allegheny College 2024-Current</p>
+			<p>Major: Software Engineering</p>
+			<p>Minor: Women's gender and sexuality studies</p>
+			<p>Microcredentials: Software development with python & Programming with Web technologies</p>
+		</div>
 	</section>
-	<p>
-		Allegheny 2024-Current
-	</p>
-	<h2>Skills</h2>
-	<h3>Skill set 1</h3>
-	<p>
-		Relevant skills
-	</p>
-	<h3>Skill set 2</h3>
-	<p>
-		Relevant skills
-	</p>
-	<h3>Skill set 3</h3>
-	<p>
-		Relevant skills
-	</p>
+	<h2 class = "centered">Skills</h2>
+	<div class = "container">
+		<div class = "full__three_column gap__3_rem">
+			<div class = "skill-card">
+				<h3>Languages</h3>
+				<p>Python</p>
+				<p>Java</p>
+				<p>Lux</p>
+				<p>HTML</p>
+				<p>CSS</p>
+			</div>
+			<div class = "skill-card">
+				<h3>Tools</h3>
+				<p>VS Code</p>
+				<p>Unity</p>
+				<p>PyGame</p>
+			</div>
+			<div class = "skill-card">
+				<h3>Skill set 3</h3>
+				<p>Relevant skills</p>
+			</div>
+		</div>
+	</div>
+	<h2 class = "centered">Career</h2>
+	<div class = "container">
+		<div class = "full__three_column gap__3_rem">
+			<div class = "skill-card">
+				<h3>Amazon</h3>
+				<p>Warehouse Associate</p>
+				<p>2024-2025</p>
+			</div>
+			<div class = "skill-card">
+				<h3>McDonalds</h3>
+				<p>Cook</p>
+				<p>2024-2024</p>
+			</div>
+			<div class = "skill-card">
+				<h3>Dollar General</h3>
+				<p>Cashier</p>
+				<p>2025-2025</p>
+			</div>
+		</div>
+	</div>
+	</section>
 </BaseLayout>
