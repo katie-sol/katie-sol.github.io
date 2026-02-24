@@ -162,11 +162,11 @@ th, td {
     background: #003333;
     padding: 2rem;
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
 }
   .skill-card h3 {
     padding-bottom: 1rem;
-}
+  }
 .full__teal_band {
     background: #008080;
 }
