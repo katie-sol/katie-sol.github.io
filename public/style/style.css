@@ -147,6 +147,21 @@ th, td {
 .text__column {
     grid-gap: 2rem;
 }
+
+.half__centered {
+    width: 33vw;
+    margin: 0 auto;
+}
+
+.half__centered img {
+    position: relative;
+    width: 100%;
+}
+
+.bottom__align {
+
+}
+
 .skill-card {
     background: #003333;
     padding: 2rem;
