@@ -214,6 +214,16 @@ th, td {
   nav {
      grid-column: span 2;
   }
+
+  .card__three_column {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
   
   .full__three_column, .full__four_column {
     display: flex;
