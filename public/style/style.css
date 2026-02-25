@@ -169,6 +169,11 @@ th, td {
     padding-bottom: 1rem;
   }
 
+.card__three_column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .row__skill_card {
     display: flex;
     flex: 3;
