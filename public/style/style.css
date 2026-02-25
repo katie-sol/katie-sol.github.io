@@ -172,6 +172,7 @@ th, td {
 .card__three_column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .row__skill_card {
@@ -183,7 +184,7 @@ th, td {
 
 .row__skill_card svg {
     margin: 0;
-    fill: #fff;
+    fill: #fff700;
 }
 
 .full__teal_band {
