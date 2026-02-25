@@ -184,7 +184,7 @@ th, td {
 
 .row__skill_card svg {
     margin: 0;
-    fill: #fff700;
+    filter: invert(1);
 }
 
 .full__teal_band {
