@@ -28,7 +28,32 @@ const SearchBar = ({search, setSearch}) => {
 }
 
 const SuggestionList = ({search, items}) => {
+    if (search === "") {
+        return (
+           <div></div>
+        )
+    }
 
+    if (items.length === 0) {
+        return (
+            <ul className = "">
+
+            </ul>
+        )
+    }
+    
+
+    return (
+        <ul className = "auto_suggest">
+            {
+                items.map({item, index}) => (
+                    <li className = "auto_suggest_item" key = {index}>
+                        (item.toLowerCase())
+                    </li>
+                )
+            }
+        </ul>
+    )
 }
 
 export default function Search () {
