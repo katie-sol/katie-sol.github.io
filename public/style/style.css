@@ -8,6 +8,15 @@
     --webco-color-gray: #777;
     --webco-printer-black: #000;
     --webco-white: #999;
+    --band-text: var(--webco-white);
+    --major-page-elements: var(--webco-printer-black);
+}
+
+:root[data-theme='dark'] {
+    background-color: var(--webco-printer-black);
+    --band-background: var(--webco-white);
+    --band-text: var(--webco-color-purple-bg);
+    --major-page-elements: var(--webco-white);
 }
 
 * {
