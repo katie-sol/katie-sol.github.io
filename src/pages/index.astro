@@ -1,8 +1,6 @@
 ---
 const pageTitle = "Home";
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Slider from '../components/Slider.jsx';
-import Carousel from "../components/Carousel.jsx";
 ---
 <BaseLayout>
 	<!-- astro <slot /> -->
@@ -27,7 +25,6 @@ import Carousel from "../components/Carousel.jsx";
 	</section>
 	<h2 class = "centered">Skills</h2>
 	<div class = "container">
-		<Carousel client:load>
 			<div class = "skill-card">
 				<h3>Languages</h3>
 				<div>
@@ -95,7 +92,6 @@ import Carousel from "../components/Carousel.jsx";
 					<p>*</p>
 				</div>
 			</div>
-		</Carousel>
 	</div>
 	<h2 class = "centered">Career</h2>
 	<div class = "container">
