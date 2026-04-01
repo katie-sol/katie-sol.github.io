@@ -246,6 +246,21 @@ input:checked + .slider:before {
     overflow: hidden;
     width: 85vw;
     margin: 0 auto;
+    position: relative;
+}
+
+.image-slider button { 
+    position: absolute;
+    z-index: 10;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.image-slider button:first-of-type {
+    left: 1rem;
+}
+.image-slider button:last-of-type { 
+    right: 1rem; 
 }
 
 .image-slider ul {

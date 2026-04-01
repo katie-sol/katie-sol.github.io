@@ -5,7 +5,7 @@ const Slider = ({slides}) => {
 
     const autoScroll = () => {
         if (currentIndex === slides.length -1) {
-            return setCurrentIndex(0)
+            return setCurrentIndex(0);
         }
         return setCurrentIndex(currentIndex + 1);
     }
@@ -13,19 +13,22 @@ const Slider = ({slides}) => {
     useEffect(() => {
         const interval = setInterval(() => {autoScroll()}, 3000);
         return () => clearInterval(interval);
-    })
+    }, [currentIndex] )
+
 
     return (
-        <div className = 'image-slider'>
+        <div className = "image-slider">
+<           button onClick={() => setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1)}>Left</button>
+            <button onClick={autoScroll}>Right</button>
             <ul>
                 {slides.map((slide, index) => (
                     <li key = {index} className = {index === currentIndex ? "active" : ""}>
                         <img 
                             src = {slide.src} 
                             alt = {slide.alt} 
-                            style = {
-                                transform: `translateX(calc(-${currentIndex = 100}% - ${currentIndex * 3}rem))`
-                            }
+                            style = {{
+                                transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 3}rem))`
+                            }}
                         />
                     </li>
                 ))}
@@ -33,3 +36,5 @@ const Slider = ({slides}) => {
         </div>
     );
 }
+
+export default Slider;
