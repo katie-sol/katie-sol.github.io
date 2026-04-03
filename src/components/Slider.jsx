@@ -18,8 +18,8 @@ const Slider = ({slides}) => {
 
     return (
         <div className = "image-slider">
-<           button onClick={() => setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1)}>Left</button>
-            <button onClick={autoScroll}>Right</button>
+            <button class = "fa-solid fa-circle-arrow-left" onClick={() => setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1)}></button>
+            <button class = "fa-solid fa-circle-arrow-right" onClick={autoScroll}></button>
             <ul>
                 {slides.map((slide, index) => (
                     <li key = {index} className = {index === currentIndex ? "active" : ""}>

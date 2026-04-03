@@ -251,16 +251,21 @@ input:checked + .slider:before {
 
 .image-slider button { 
     position: absolute;
+    background: none;
+    border: none;
     z-index: 10;
-    top: 50%; 
-    transform: translateY(-50%);
+    top: 50%;
+    opacity: 50%;
 }
 
 .image-slider button:first-of-type {
     left: 1rem;
+    scale: 3;
 }
+
 .image-slider button:last-of-type { 
-    right: 1rem; 
+    right: 2.5rem;
+    scale: 3;
 }
 
 .image-slider ul {
