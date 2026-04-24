@@ -194,6 +194,19 @@ th, td {
     background: #008080;
 }
 
+.skill-circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-right: 5px;
+}
+
+.skill-circle.filled {
+    background-color: #4caf50;
+}
+
 @media screen and (max-width: 850px) {
     
     .full__four_column {

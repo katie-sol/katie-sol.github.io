@@ -1,6 +1,7 @@
 ---
 const pageTitle = "Home";
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Circle from '../components/Circle.jsx';
 ---
 <BaseLayout>
 	<!-- astro <slot /> -->
@@ -23,78 +24,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<p>Microcredentials: Software development with python & Programming with Web technologies</p>
 		</div>
 	</section>
-	<h2 class = "centered">Skills</h2>
-	<div class = "container">
-		<div class = "card__three_column">
-			<div class = "skill-card">
-				<h3>Languages</h3>
-				<div>
-					<div class = "row__skill_card">
-					<svg width = "1.5rem" height = "2rem">
-  						<use href = "/img/icons/python.svg" />
-					</svg>
-					<p>Python</p>
-					<p>**</p>
-					</div>
-					<div class = "row__skill_card">
-						<svg width = "1.5rem" height = "2rem">
-  							<use href = "/img/icons/java.svg" />
-						</svg>
-						<p>Java</p>
-						<p>*</p>
-					</div>
-					<div class = "row__skill_card">
-						<svg width = "1.5rem" height = "2rem">
-  							<use href = "/img/icons/brand-html5.svg" />
-						</svg>
-						<p>HTML</p>
-						<p>*</p>
-					</div>
-					<div class = "row__skill_card">
-						<svg width = "1.5rem" height = "2rem">
-  							<use href = "/img/icons/brand-css3.svg" />
-						</svg>
-						<p>CSS</p>
-						<p>*</p>
-					</div>
-				</div>
-			</div>
-			<div class = "skill-card">
-				<h3>Tools</h3>
-				<div class = "row__skill_card">
-					<svg width = "1.5rem" height = "2rem">
-  						<use href = "/img/icons/brand-vscode.svg" />
-					</svg>
-					<p>VS Code</p>
-					<p>***</p>
-				</div>
-				<div class = "row__skill_card">
-					<svg width = "1.5rem" height = "2rem">
-  						<use href = "/img/icons/unity.svg" />
-					</svg>
-					<p>Unity</p>
-					<p>*</p>
-				</div>
-				<div class = "row__skill_card">
-					<svg width = "1.5rem" height = "2rem">
-  						<use href = "/img/icons/python.svg" />
-					</svg>
-					<p>PyGame</p>
-					<p>*</p>
-				</div>
-			</div>
-			<div class = "skill-card">
-				<h3>Frameworks</h3>
-				<div class = "row__skill_card">
-					<svg width = "1.5rem" height = "2rem">
-  						<use href = "/img/icons/brand-nodejs.svg" />
-					</svg>
-					<p>nodejs</p>
-					<p>*</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<Circle client:load />
 	<h2 class = "centered">Career</h2>
 	<div class = "container">
 		<div class = "card__three_column">
